@@ -14,19 +14,24 @@ void SelectionSort(char *array, char size, int order) {
 //s4 e Stemp
         for (j = i + 1; j < size; j++) {
 			//s6
-			aux = array[j] 
+			auxA = array[j] 
             if (order == 1 && aux < array[min] || order == 0 && aux > array[min] ) { // Cresc ou decre
                     min = j;
             }
         }
 
          if (i != min) {
-            
-             array[i] = array[i] ^ array[min];
+			 aux = array[i]
+			 
+             aux = aux ^ array[min];
+			 
+			 //array[i] = aux
 			
-             array[min] = array[i] ^ array[min];
+             array[min] = aux ^ array[min];
 			
-             array[i] = array[i] ^ array[min];
+             aux = aux ^ array[min];
+			 
+			 array[i] = aux
          }
     }
 }
