@@ -12,7 +12,7 @@ void SelectionSort(char *array, char size, int order) {
         for (j = i + 1; j < size; j++) {
 			aux = array[j]; 
 			
-            if (order == 1 && aux < array[min] || order == 0 && aux > array[min] ) { // Cresce ou decresce
+            if (order == 1 && aux < array[min] || order == 0 && aux > array[min] ) { 
                     min = j;
             }
         }
