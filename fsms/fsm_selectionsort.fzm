@@ -1,4 +1,4 @@
-## File last modified by Fizzim: 22:40:53 on 23/04/25
+## File last modified by Fizzim: 00:45:26 on 24/04/2025
 <version>
    14.02.26
 </version>
@@ -3940,16 +3940,16 @@ fzm_globalTable
       </wrAux2>
    </attributes>
    <x0>
-   192
+   238
    </x0>
    <y0>
-   76
+   72
    </y0>
    <x1>
-   322
+   368
    </x1>
    <y1>
-   206
+   202
    </y1>
    <reset>
    true
@@ -4236,10 +4236,10 @@ fzm_globalTable
             </status>
          </resetval>
          <x2Obj>
-         1
+         2
          </x2Obj>
          <y2Obj>
-         32
+         30
          </y2Obj>
          <page>
          1
@@ -5271,10 +5271,10 @@ fzm_globalTable
             </status>
          </resetval>
          <x2Obj>
-         -23
+         -4
          </x2Obj>
          <y2Obj>
-         -12
+         -14
          </y2Obj>
          <page>
          1
@@ -5288,34 +5288,34 @@ fzm_globalTable
    S1
    </endState>
    <startPtX>
-   321.0
+   352.0
    </startPtX>
    <startPtY>
-   129.0
+   95.0
    </startPtY>
    <endPtX>
    443.0
    </endPtX>
    <endPtY>
-   106.0
+   94.0
    </endPtY>
    <startCtrlPtX>
-   348.0
+   371.0
    </startCtrlPtX>
    <startCtrlPtY>
-   117.0
+   91.0
    </startCtrlPtY>
    <endCtrlPtY>
-   388.0
+   415.0
    </endCtrlPtY>
    <endCtrlPtY>
-   102.0
+   90.0
    </endCtrlPtY>
    <startStateIndex>
-   35
+   32
    </startStateIndex>
    <endStateIndex>
-   18
+   19
    </endStateIndex>
    <page>
    1
@@ -5355,10 +5355,10 @@ fzm_globalTable
 <textObj>
 reg_startAddr <- data
    <x>
-   271
+   130
    </x>
    <y>
-   57
+   84
    </y>
    <page>
    1
@@ -6673,10 +6673,10 @@ reg_startAddr <- data
             </status>
          </resetval>
          <x2Obj>
-         -3
+         2
          </x2Obj>
          <y2Obj>
-         -13
+         -9
          </y2Obj>
          <page>
          1
@@ -6757,10 +6757,10 @@ reg_startAddr <- data
 <textObj>
 reg_size <- data
    <x>
-   566
+   558
    </x>
    <y>
-   57
+   52
    </y>
    <page>
    1
@@ -7950,13 +7950,13 @@ reg_size <- data
    722
    </x0>
    <y0>
-   260
+   261
    </y0>
    <x1>
    852
    </x1>
    <y1>
-   390
+   391
    </y1>
    <reset>
    false
@@ -8101,7 +8101,7 @@ reg_size <- data
    787.0
    </endPtX>
    <endPtY>
-   260.0
+   261.0
    </endPtY>
    <startCtrlPtX>
    789.0
@@ -8113,7 +8113,7 @@ reg_size <- data
    787.0
    </endCtrlPtY>
    <endCtrlPtY>
-   230.0
+   231.0
    </endCtrlPtY>
    <startStateIndex>
    8
@@ -8159,10 +8159,10 @@ reg_size <- data
 <textObj>
 reg_order <- data
    <x>
-   833
+   830
    </x>
    <y>
-   64
+   57
    </y>
    <page>
    1
@@ -9497,7 +9497,7 @@ reg_order <- data
    722.0
    </startPtX>
    <startPtY>
-   325.0
+   326.0
    </startPtY>
    <endPtX>
    495.0
@@ -9509,7 +9509,7 @@ reg_order <- data
    654.0
    </startCtrlPtX>
    <startCtrlPtY>
-   327.0
+   328.0
    </startCtrlPtY>
    <endCtrlPtY>
    550.0
@@ -9687,28 +9687,28 @@ reg_order <- data
    262.0
    </startPtY>
    <endPtX>
-   298.0
+   303.0
    </endPtX>
    <endPtY>
-   190.0
+   202.0
    </endPtY>
    <startCtrlPtX>
-   339.0
+   359.0
    </startCtrlPtX>
    <startCtrlPtY>
-   247.0
+   253.0
    </startCtrlPtY>
    <endCtrlPtY>
-   310.0
+   316.0
    </endCtrlPtY>
    <endCtrlPtY>
-   217.0
+   240.0
    </endCtrlPtY>
    <startStateIndex>
    20
    </startStateIndex>
    <endStateIndex>
-   5
+   9
    </endStateIndex>
    <page>
    1
@@ -11057,7 +11057,7 @@ reg_order <- data
          42
          </x2Obj>
          <y2Obj>
-         1
+         -2
          </y2Obj>
          <page>
          1
@@ -11074,7 +11074,7 @@ reg_order <- data
    798.0
    </startPtX>
    <startPtY>
-   389.0
+   390.0
    </startPtY>
    <endPtX>
    802.0
@@ -11086,7 +11086,7 @@ reg_order <- data
    803.0
    </startCtrlPtX>
    <startCtrlPtY>
-   404.0
+   405.0
    </startCtrlPtY>
    <endCtrlPtY>
    804.0
@@ -12316,16 +12316,16 @@ reg_order <- data
       </wrAux2>
    </attributes>
    <x0>
-   115
+   97
    </x0>
    <y0>
-   966
+   1090
    </y0>
    <x1>
-   245
+   227
    </x1>
    <y1>
-   1096
+   1220
    </y1>
    <reset>
    false
@@ -13544,7 +13544,7 @@ reg_order <- data
 <textObj>
 reg_order == 1 && reg_aux < mem[reg_min] ||
    <x>
-   534
+   529
    </x>
    <y>
    870
@@ -14746,16 +14746,16 @@ for (reg_j < size)
       </wrAux2>
    </attributes>
    <x0>
-   709
+   755
    </x0>
    <y0>
-   1107
+   1103
    </y0>
    <x1>
-   839
+   885
    </x1>
    <y1>
-   1237
+   1233
    </y1>
    <reset>
    false
@@ -14897,22 +14897,22 @@ for (reg_j < size)
    974.0
    </startPtY>
    <endPtX>
-   796.0
+   842.0
    </endPtX>
    <endPtY>
-   1110.0
+   1106.0
    </endPtY>
    <startCtrlPtX>
-   825.0
+   842.0
    </startCtrlPtX>
    <startCtrlPtY>
-   1060.0
+   1007.0
    </startCtrlPtY>
    <endCtrlPtY>
-   815.0
+   845.0
    </endCtrlPtY>
    <endCtrlPtY>
-   1094.0
+   1090.0
    </endCtrlPtY>
    <startStateIndex>
    7
@@ -14958,10 +14958,10 @@ for (reg_j < size)
 <textObj>
 reg_j <= reg_j + 1 
    <x>
-   305
+   326
    </x>
    <y>
-   1087
+   990
    </y>
    <page>
    1
@@ -16148,16 +16148,16 @@ reg_j <= reg_j + 1
       </wrAux2>
    </attributes>
    <x0>
-   341
+   413
    </x0>
    <y0>
-   1091
+   1095
    </y0>
    <x1>
-   471
+   543
    </x1>
    <y1>
-   1221
+   1225
    </y1>
    <reset>
    false
@@ -16293,28 +16293,28 @@ reg_j <= reg_j + 1
    S8
    </endState>
    <startPtX>
-   709.0
+   755.0
    </startPtX>
    <startPtY>
-   1172.0
+   1168.0
    </startPtY>
    <endPtX>
-   470.0
+   542.0
    </endPtX>
    <endPtY>
-   1167.0
+   1171.0
    </endPtY>
    <startCtrlPtX>
-   669.0
+   715.0
    </startCtrlPtX>
    <startCtrlPtY>
-   1172.0
+   1168.0
    </startCtrlPtY>
    <endCtrlPtY>
-   508.0
+   580.0
    </endCtrlPtY>
    <endCtrlPtY>
-   1167.0
+   1171.0
    </endCtrlPtY>
    <startStateIndex>
    18
@@ -16463,7 +16463,7 @@ reg_j <= reg_j + 1
             </status>
          </resetval>
          <x2Obj>
-         4
+         -28
          </x2Obj>
          <y2Obj>
          -25
@@ -16486,22 +16486,22 @@ reg_j <= reg_j + 1
    954.0
    </startPtY>
    <endPtX>
-   467.0
+   539.0
    </endPtX>
    <endPtY>
-   1133.0
+   1137.0
    </endPtY>
    <startCtrlPtX>
-   806.0
+   781.0
    </startCtrlPtX>
    <startCtrlPtY>
-   1079.0
+   1073.0
    </startCtrlPtY>
    <endCtrlPtY>
-   565.0
+   637.0
    </endCtrlPtY>
    <endCtrlPtY>
-   1135.0
+   1139.0
    </endCtrlPtY>
    <startStateIndex>
    14
@@ -17853,10 +17853,10 @@ reg_j <= reg_j + 1
             </status>
          </resetval>
          <x2Obj>
-         -21
+         -2
          </x2Obj>
          <y2Obj>
-         -104
+         -186
          </y2Obj>
          <page>
          1
@@ -17870,10 +17870,10 @@ reg_j <= reg_j + 1
    S10
    </endState>
    <startPtX>
-   229.0
+   211.0
    </startPtX>
    <startPtY>
-   989.0
+   1113.0
    </startPtY>
    <endPtX>
    488.0
@@ -17882,16 +17882,16 @@ reg_j <= reg_j + 1
    629.0
    </endPtY>
    <startCtrlPtX>
-   260.0
+   242.0
    </startCtrlPtX>
    <startCtrlPtY>
-   909.0
+   1033.0
    </startCtrlPtY>
    <endCtrlPtY>
-   449.0
+   339.0
    </endCtrlPtY>
    <endCtrlPtY>
-   661.0
+   743.0
    </endCtrlPtY>
    <startStateIndex>
    32
@@ -18066,7 +18066,7 @@ reg_j <= reg_j + 1
    745.0
    </endPtX>
    <endPtY>
-   374.0
+   375.0
    </endPtY>
    <startCtrlPtX>
    645.0
@@ -18078,7 +18078,7 @@ reg_j <= reg_j + 1
    699.0
    </endCtrlPtY>
    <endCtrlPtY>
-   408.0
+   409.0
    </endCtrlPtY>
    <startStateIndex>
    30
@@ -19302,16 +19302,16 @@ reg_j <= reg_j + 1
       </wrAux2>
    </attributes>
    <x0>
-   115
+   101
    </x0>
    <y0>
-   758
+   893
    </y0>
    <x1>
-   245
+   231
    </x1>
    <y1>
-   888
+   1023
    </y1>
    <reset>
    false
@@ -19430,10 +19430,10 @@ reg_j <= reg_j + 1
             </status>
          </resetval>
          <x2Obj>
-         -85
+         -83
          </x2Obj>
          <y2Obj>
-         -2
+         2
          </y2Obj>
          <page>
          1
@@ -19447,34 +19447,34 @@ reg_j <= reg_j + 1
    S11
    </endState>
    <startPtX>
-   180.0
+   184.0
    </startPtX>
    <startPtY>
-   966.0
+   1093.0
    </startPtY>
    <endPtX>
-   180.0
+   188.0
    </endPtX>
    <endPtY>
-   888.0
+   1019.0
    </endPtY>
    <startCtrlPtX>
-   180.0
+   191.0
    </startCtrlPtX>
    <startCtrlPtY>
-   941.0
+   1078.0
    </startCtrlPtY>
    <endCtrlPtY>
-   178.0
+   192.0
    </endCtrlPtY>
    <endCtrlPtY>
-   915.0
+   1040.0
    </endCtrlPtY>
    <startStateIndex>
-   27
+   29
    </startStateIndex>
    <endStateIndex>
-   9
+   7
    </endStateIndex>
    <page>
    1
@@ -19514,10 +19514,10 @@ reg_j <= reg_j + 1
 <textObj>
 reg_aux2 = reg_aux ^ mem[min]
    <x>
-   13
+   4
    </x>
    <y>
-   575
+   704
    </y>
    <page>
    1
@@ -20704,16 +20704,16 @@ reg_aux2 = reg_aux ^ mem[min]
       </wrAux2>
    </attributes>
    <x0>
-   107
+   117
    </x0>
    <y0>
-   578
+   706
    </y0>
    <x1>
-   237
+   247
    </x1>
    <y1>
-   708
+   836
    </y1>
    <reset>
    false
@@ -20849,31 +20849,31 @@ reg_aux2 = reg_aux ^ mem[min]
    S12
    </endState>
    <startPtX>
-   180.0
+   177.0
    </startPtX>
    <startPtY>
-   758.0
+   893.0
    </startPtY>
    <endPtX>
-   172.0
+   182.0
    </endPtX>
    <endPtY>
-   708.0
+   836.0
    </endPtY>
    <startCtrlPtX>
-   179.0
+   175.0
    </startCtrlPtX>
    <startCtrlPtY>
-   745.0
+   872.0
    </startCtrlPtY>
    <endCtrlPtY>
-   171.0
+   179.0
    </endCtrlPtY>
    <endCtrlPtY>
-   730.0
+   858.0
    </endCtrlPtY>
    <startStateIndex>
-   27
+   28
    </startStateIndex>
    <endStateIndex>
    9
@@ -20928,10 +20928,10 @@ reg_aux2 = reg_aux ^ mem[min]
 <textObj>
 reg_aux = reg_aux ^ reg_aux2
    <x>
-   100
+   74
    </x>
    <y>
-   229
+   358
    </y>
    <page>
    1
@@ -22118,16 +22118,16 @@ reg_aux = reg_aux ^ reg_aux2
       </wrAux2>
    </attributes>
    <x0>
-   146
+   160
    </x0>
    <y0>
-   240
+   366
    </y0>
    <x1>
-   276
+   290
    </x1>
    <y1>
-   370
+   496
    </y1>
    <reset>
    false
@@ -22143,10 +22143,10 @@ reg_aux = reg_aux ^ reg_aux2
 <textObj>
 mem[i] = reg_aux
    <x>
-   294
+   305
    </x>
    <y>
-   362
+   395
    </y>
    <page>
    1
@@ -22275,34 +22275,34 @@ mem[i] = reg_aux
    S15
    </endState>
    <startPtX>
-   272.0
+   286.0
    </startPtX>
    <startPtY>
-   327.0
+   453.0
    </startPtY>
    <endPtX>
-   299.0
+   329.0
    </endPtX>
    <endPtY>
-   397.0
+   468.0
    </endPtY>
    <startCtrlPtX>
-   287.0
+   289.0
    </startCtrlPtX>
    <startCtrlPtY>
-   328.0
+   449.0
    </startCtrlPtY>
    <endCtrlPtY>
-   292.0
+   316.0
    </endCtrlPtY>
    <endCtrlPtY>
-   383.0
+   456.0
    </endCtrlPtY>
    <startStateIndex>
    2
    </startStateIndex>
    <endStateIndex>
-   22
+   18
    </endStateIndex>
    <page>
    1
@@ -23838,7 +23838,7 @@ mem[i] = reg_aux
          -78
          </x2Obj>
          <y2Obj>
-         4
+         3
          </y2Obj>
          <page>
          1
@@ -24063,10 +24063,10 @@ reg_aux <=mem[reg_i]
    S5
    </endState>
    <startPtX>
-   406.0
+   478.0
    </startPtX>
    <startPtY>
-   1091.0
+   1095.0
    </startPtY>
    <endPtX>
    729.0
@@ -24075,16 +24075,16 @@ reg_aux <=mem[reg_i]
    747.0
    </endPtY>
    <startCtrlPtX>
-   418.0
+   492.0
    </startCtrlPtX>
    <startCtrlPtY>
-   948.0
+   961.0
    </startCtrlPtY>
    <endCtrlPtY>
-   491.0
+   429.0
    </endCtrlPtY>
    <endCtrlPtY>
-   796.0
+   773.0
    </endCtrlPtY>
    <startStateIndex>
    27
@@ -24130,7 +24130,7 @@ reg_aux <=mem[reg_i]
 <textObj>
 reg_order == 0 && reg_aux > mem[reg_min] 
    <x>
-   534
+   526
    </x>
    <y>
    887
@@ -24142,10 +24142,10 @@ reg_order == 0 && reg_aux > mem[reg_min]
 <textObj>
 reg_order == 0 && reg_aux > mem[reg_min] )
    <x>
-   508
+   511
    </x>
    <y>
-   1028
+   1035
    </y>
    <page>
    1
@@ -24257,10 +24257,10 @@ reg_order == 0 && reg_aux > mem[reg_min] )
             </status>
          </resetval>
          <x2Obj>
-         0
+         76
          </x2Obj>
          <y2Obj>
-         -106
+         -203
          </y2Obj>
          <page>
          1
@@ -24280,10 +24280,10 @@ reg_order == 0 && reg_aux > mem[reg_min] )
    711.0
    </startPtY>
    <endPtX>
-   241.0
+   223.0
    </endPtX>
    <endPtY>
-   1053.0
+   1132.0
    </endPtY>
    <startCtrlPtX>
    583.0
@@ -24292,16 +24292,16 @@ reg_order == 0 && reg_aux > mem[reg_min] )
    719.0
    </startCtrlPtY>
    <endCtrlPtY>
-   379.0
+   398.0
    </endCtrlPtY>
    <endCtrlPtY>
-   913.0
+   783.0
    </endCtrlPtY>
    <startStateIndex>
    19
    </startStateIndex>
    <endStateIndex>
-   2
+   34
    </endStateIndex>
    <page>
    1
@@ -25452,7 +25452,7 @@ reg_order == 0 && reg_aux > mem[reg_min] )
             </status>
          </resetval>
          <x2Obj>
-         1
+         0
          </x2Obj>
          <y2Obj>
          8
@@ -25519,16 +25519,16 @@ reg_order == 0 && reg_aux > mem[reg_min] )
       </wrAux2>
    </attributes>
    <x0>
-   284
+   329
    </x0>
    <y0>
-   374
+   403
    </y0>
    <x1>
-   414
+   459
    </x1>
    <y1>
-   504
+   533
    </y1>
    <reset>
    false
@@ -25664,34 +25664,34 @@ reg_order == 0 && reg_aux > mem[reg_min] )
    S10
    </endState>
    <startPtX>
-   410.0
+   458.0
    </startPtX>
    <startPtY>
-   461.0
+   479.0
    </startPtY>
    <endPtX>
-   496.0
+   515.0
    </endPtX>
    <endPtY>
-   538.0
+   526.0
    </endPtY>
    <startCtrlPtX>
-   416.0
+   474.0
    </startCtrlPtX>
    <startCtrlPtY>
-   461.0
+   483.0
    </startCtrlPtY>
    <endCtrlPtY>
-   473.0
+   503.0
    </endCtrlPtY>
    <endCtrlPtY>
-   497.0
+   505.0
    </endCtrlPtY>
    <startStateIndex>
-   2
+   1
    </startStateIndex>
    <endStateIndex>
-   23
+   25
    </endStateIndex>
    <page>
    1
@@ -25731,10 +25731,10 @@ reg_order == 0 && reg_aux > mem[reg_min] )
 <textObj>
 reg_aux = reg_aux ^ mem[min]
    <x>
-   7
+   4
    </x>
    <y>
-   757
+   890
    </y>
    <page>
    1
@@ -25755,10 +25755,10 @@ for(reg_i + 1 < reg_size)
 <textObj>
 reg_min <- reg_i
    <x>
-   842
+   841
    </x>
    <y>
-   281
+   278
    </y>
    <page>
    1
@@ -25767,10 +25767,10 @@ reg_min <- reg_i
 <textObj>
 reg_j <= reg_i + 1
    <x>
-   833
+   840
    </x>
    <y>
-   471
+   476
    </y>
    <page>
    1
@@ -25779,10 +25779,10 @@ reg_j <= reg_i + 1
 <textObj>
 reg_min <= reg_j 
    <x>
-   661
+   712
    </x>
    <y>
-   1113
+   1105
    </y>
    <page>
    1
@@ -25803,10 +25803,10 @@ reg_min <= reg_j
 <textObj>
 reg_i <= reg_i + 1
    <x>
-   484
+   385
    </x>
    <y>
-   502
+   558
    </y>
    <page>
    1
@@ -25815,22 +25815,10 @@ reg_i <= reg_i + 1
 <textObj>
 reg_aux <= mem[reg_i]
    <x>
-   18
+   10
    </x>
    <y>
-   980
-   </y>
-   <page>
-   1
-   </page>
-</textObj>
-<textObj>
-
-   <x>
-   82
-   </x>
-   <y>
-   1037
+   1100
    </y>
    <page>
    1
@@ -25839,10 +25827,10 @@ reg_aux <= mem[reg_i]
 <textObj>
 reg_i = reg_min
    <x>
-   33
+   20
    </x>
    <y>
-   997
+   1115
    </y>
    <page>
    1
@@ -25851,10 +25839,10 @@ reg_i = reg_min
 <textObj>
 aux_t_min <= 1
    <x>
-   839
+   852
    </x>
    <y>
-   1068
+   1042
    </y>
    <page>
    1
@@ -25863,10 +25851,10 @@ aux_t_min <= 1
 <textObj>
 |aux_t_min <= 0
    <x>
-   519
+   593
    </x>
    <y>
-   1041
+   1051
    </y>
    <page>
    1
@@ -27053,16 +27041,16 @@ aux_t_min <= 1
       </wrAux2>
    </attributes>
    <x0>
-   38
+   50
    </x0>
    <y0>
-   383
+   487
    </y0>
    <x1>
-   168
+   180
    </x1>
    <y1>
-   513
+   617
    </y1>
    <reset>
    false
@@ -27198,34 +27186,34 @@ aux_t_min <= 1
    S13
    </endState>
    <startPtX>
-   172.0
+   193.0
    </startPtX>
    <startPtY>
-   578.0
+   706.0
    </startPtY>
    <endPtX>
-   103.0
+   147.0
    </endPtX>
    <endPtY>
-   513.0
+   608.0
    </endPtY>
    <startCtrlPtX>
-   139.0
+   187.0
    </startCtrlPtX>
    <startCtrlPtY>
-   510.0
+   667.0
    </startCtrlPtY>
    <endCtrlPtY>
-   97.0
+   168.0
    </endCtrlPtY>
    <endCtrlPtY>
-   599.0
+   627.0
    </endCtrlPtY>
    <startStateIndex>
-   27
+   28
    </startStateIndex>
    <endStateIndex>
-   9
+   6
    </endStateIndex>
    <page>
    1
@@ -27265,10 +27253,10 @@ aux_t_min <= 1
 <textObj>
 mem[min] = reg_aux2
    <x>
-   15
+   8
    </x>
    <y>
-   374
+   481
    </y>
    <page>
    1
@@ -27397,34 +27385,34 @@ mem[min] = reg_aux2
    S14
    </endState>
    <startPtX>
-   125.0
+   147.0
    </startPtX>
    <startPtY>
-   386.0
+   495.0
    </startPtY>
    <endPtX>
-   169.0
+   175.0
    </endPtX>
    <endPtY>
-   354.0
+   472.0
    </endPtY>
    <startCtrlPtX>
-   126.0
+   152.0
    </startCtrlPtX>
    <startCtrlPtY>
-   378.0
+   477.0
    </startCtrlPtY>
    <endCtrlPtY>
-   159.0
+   170.0
    </endCtrlPtY>
    <endCtrlPtY>
-   357.0
+   473.0
    </endCtrlPtY>
    <startStateIndex>
-   29
+   30
    </startStateIndex>
    <endStateIndex>
-   13
+   14
    </endStateIndex>
    <page>
    1
