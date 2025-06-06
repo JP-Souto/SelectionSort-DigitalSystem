@@ -18,23 +18,17 @@ void SelectionSort(char *array, char size, int order) {
         }
 
          if (i != min) {
-			 aux = array[i];
-			 
-			 aux = aux ^ array[min];
-			 
-			 aux2 = aux ^ array[min];
-			 
-			 array[min] = aux2;
-			 
-			 aux = aux ^ aux2;
-			 
-			 array[i] = aux;
+            aux = array[i];       // aux armazena array[i] 2
+            aux2 = array[min];    // aux2 armazena array[min] 3
+        
+            array[i] = aux2;      // array[i] recebe o valor de array[min] 3
+            array[min] = aux;     // array[min] recebe o valor de array[i] original 2
          }
     }
 }
 
 int main() {
-    char array[SIZE] = { 5, 3, -1, 4, 3 };
+    char array[SIZE] = { 4, 2, 3, 1};
     int i;
     int order;
 
