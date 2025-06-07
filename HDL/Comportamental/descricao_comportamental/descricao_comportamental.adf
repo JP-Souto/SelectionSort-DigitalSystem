@@ -1,0 +1,25 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=descricao_comportamental
+[Library]
+descricao_comportamental=.\descricao_comportamental\descricao_comportamental.lib
+[$LibMap$]
+descricao_comportamental=.
+Active_lib=
+[Settings]
+FLOW_TYPE=Schematic
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+[Files]
+/SelectionSort_pkg.vhd=-1
+/ControlPath.vhd=-1
+[Files.Data]
+.\src\Datapath.vhd=VHDL Source Code
+.\src\SelectionSort_pkg.vhd=VHDL Source Code
+.\src\ControlPath.vhd=VHDL Source Code
