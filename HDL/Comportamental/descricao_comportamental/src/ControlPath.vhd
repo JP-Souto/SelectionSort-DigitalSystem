@@ -30,18 +30,17 @@ begin
 		-- State memory	
 		process(clk,rst)  
 		begin 
-			if rst <= '1' then
+			if rst = '1' then
 			currentState <= S0;
 		
 			elsif rising_edge(clk) then
 				currentState <= nextState;
+				
 			end if;	
 		end process;
 			
 		-- Next state logic
-		process(currentState, data_av, sts.lt_size, 
-		
-		sts.i_dt_min, sts.aux_t_min)
+		process(currentState, data_av, sts.lt_size, sts.i_dt_min, sts.aux_t_min)
 		begin 
 			case currentState is
 				when S0 =>
@@ -112,13 +111,47 @@ begin
 					nextState <= S13;
 					
 				when S13 =>
-					nextState <= S14;	
+					nextState <= S10;	
 					
 				when others	=>	-- S14
 					nextState <= S0;
 					
 			end case;
 		end process;
-					
 		
-end behavioral;
+		-- Output logic	
+		done <= '1' when currentState = S14 else '0';		
+			
+		-- Write	
+		cmd.wrStartAddr <= '1' when currentState = S0 else '0';	
+		cmd.wrSize <= '1' when currentState = S1 else '0'; 
+		cmd.wrOrder <= '1' when currentState = S2 else '0';	
+		cmd.wrI <= '1' when currentState = S1 or currentState = S10 else '0';	 
+		cmd.wrMIn <= '1' when currentState = S3 or currentState = S7 else '0';	 
+		cmd.wrJ <= '1' when currentState = S4 or currentState = S8 else '0';
+		cmd.wrAux <= '1' when currentState = S5 or currentState = S9 else '0'; 
+		cmd.wrAux2 <= '1' when currentState = S11 else '0';
+			
+		-- Mux
+		cmd.seli1 <= '1' when currentState = S1 else '0';
+		cmd.selComp <= '1' when currentState = S5 else '0';
+		cmd.selAddr0 <= '1' when currentState =	S5 or
+								 currentState = S9 or
+								 currentState = S12 else '0';
+		cmd.selAddr1 <= '1' when currentState =	S5 or
+								 currentState = S9 or
+								 currentState = S12 else '0';  
+		cmd.selMin <= '1' when currentState = S7 else '0';
+		cmd.selInc <= '1' when currentState = S8 else '0';
+		cmd.selData_out <= '1' when currentState = S13 else '0';	
+		-- Memory interface
+		sel <= '1' when currentState = S5 or 
+						currentState = S6 or
+						currentState = S9 or
+						currentState = S11 or
+						currentState = S12 or						
+						currentState = S13 else '0';	  
+		ld <= '1' when currentState = S12 or currentState = S13 else '0';
+											
+end behavioral;			
+

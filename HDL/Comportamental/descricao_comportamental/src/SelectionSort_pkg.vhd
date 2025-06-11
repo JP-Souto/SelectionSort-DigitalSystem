@@ -14,7 +14,7 @@ package SelectionSort_pkg is
 		wrAux, wrAux2					: std_logic;
 		
 		-- Mux selector
-		selI, selInc, selComp, selMin, selAddr0, selAddr1, selData_out	: std_logic;
+		seli1, selInc, selComp, selMin, selAddr0, selAddr1, selData_out	: std_logic;
 	end record;																		
 	
 	type Status is record	  
