@@ -27,7 +27,10 @@ architecture behavioral of ControlPath is
 	
 begin  
 	
-		-- State memory	
+	
+		--aux_t_min <= '1' i /= min else '0';
+	
+	    -- State memory	
 		process(clk,rst)  
 		begin 
 			if rst = '1' then

@@ -1,3 +1,6 @@
 i<>.\src\selectionsort_pkv.vhd
 i<>.\src\SelectionSort_pkg.vhd
 i<>.\src\ControlPath.vhd
+i<>.\src\ControlPath_tb.vhd
+i<>.\src\DataPath.vhd
+i<>.\src\RegisterNbits.vhd

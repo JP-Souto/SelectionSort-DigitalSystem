@@ -138,61 +138,71 @@ begin
             q       => aux2            
         );
 
-    --multiplexadores
+    --multiplexadores		
+	
+	--aux_t_min <= '1' i /= min else '0';
+		
+	muxI <= startAddr when cmd.seli1 <= '1' else STD_LOGIC_VECTOR(sum);
+     --process(cmd.seli1, startAddr, sum)
+     --begin
+       -- if cmd.seli1 = '1' then
+        --   muxI <= startAddr;
+        --else
+          -- muxI <= STD_LOGIC_VECTOR(sum);
+        --end if;
+     --end process;
+	 
+	 muxInc <= j when cmd.selInc <= '1' else i;
+	 --when cmd.selInc <= '1' muxInc <= j else muxInc <= i;
+     --process(cmd.selInc, i, j)
+     --begin
+     --   if cmd.selInc = '1' then
+     --      muxInc <= j;
+     --   else
+     --      muxInc <= i;
+     --   end if;
+     --end process;
+	 
+	 muxMin <= j when cmd.selMin <= '1' else i;
+     --process(cmd.selMin, i, j)
+     --begin
+     --   if cmd.selMin = '1' then
+     --      muxMin <= j;
+     --   else
+     --      muxMin <= i;
+     --   end if;
+     ---end process;
+	 
 
-     process(cmd.seli1, startAddr, sum)
-     begin
-        if cmd.selInc = '1' then
-           muxI <= startAddr;
-        else
-           muxI <= STD_LOGIC_VECTOR(sum);
-        end if;
-     end process;
-
-     process(cmd.selInc, i, j)
-     begin
-        if cmd.selInc = '1' then
-           muxInc <= j;
-        else
-           muxInc <= i;
-        end if;
-     end process;
-
-     process(cmd.selMin, i, j)
-     begin
-        if cmd.selInc = '1' then
-           muxMin <= j;
-        else
-           muxMin <= i;
-        end if;
-     end process;
-
-     process(cmd.selComp, sum, j)
-     begin
-        if cmd.selInc = '1' then
-           muxSub <= j;
-        else
-           muxSub <= STD_LOGIC_VECTOR(sum);
-        end if;
-     end process;
-
-     process(cmd.selAddr0, j, i)
-     begin
-        if cmd.selAddr0 = '1' then
-           muxAddr0 <= i;
-        else
-           muxAddr0 <= j;
-        end if;
-     end process;
-
-     process(cmd.selAddr1, muxAddr0, min)
-     begin
-        if cmd.selAddr1 = '1' then
-           muxAddr1 <= muxAddr0;
-        else
-           muxAddr1 <= min;
-        end if;
-     end process;
+	 muxSub <= j when cmd.selComp <= '1' else STD_logic_vector(sum); 
+     --process(cmd.selComp, sum, j)
+     --begin
+     --   if cmd.selComp = '1' then
+     --      muxSub <= j;
+     --   else
+     --      muxSub <= STD_LOGIC_VECTOR(sum);
+     --   end if;
+     --end process;
+	 
+	 muxAddr0 <= i when cmd.selAddr0 <= '1' else j;
+     --process(cmd.selAddr0, j, i)
+     --begin
+     --   if cmd.selAddr0 = '1' then
+     --      muxAddr0 <= i;
+     --   else
+     --      muxAddr0 <= j;
+     --   end if;
+     --end process;
+	 
+	 muxAddr1 <= muxAddr0 when cmd.selAddr1 <= '1' else min;
+     --process(cmd.selAddr1, muxAddr0, min)
+     --begin
+     --  if cmd.selAddr1 = '1' then
+     --      muxAddr1 <= muxAddr0;
+     --   else
+     --      muxAddr1 <= min;
+     --   end if;
+     --end process;
 
 	--COMPARADOR DO ORDER SE RESOLVE COMO?
      --process(order, muxAddr0, min)
@@ -203,23 +213,37 @@ begin
         --   muxAddr1 <= min;
        -- end if;
     -- end process;
+	
+	 muxData_out <= Aux when cmd.selData_out = '1' else Aux2;
+     --process(cmd.selData_out, Aux2, Aux)
+     --begin
+     --   if cmd.selAddr1 = '1' then
+     --      muxData_out <= Aux;
+     --   else
+     --      muxData_out <= Aux2;
+     --   end if;
+     --end process;		  
+	 
+	 -- Mux Order
+	 --MuxOrder <= '1' when order <= '1' else '0';
 
-     process(cmd.selData_out, Aux2, Aux)
-     begin
-        if cmd.selAddr1 = '1' then
-           muxData_out <= Aux;
-        else
-           muxData_out <= Aux2;
-        end if;
-     end process;
-
-    --somador
+    --somador	   	
 	sum <= UNSIGNED(muxInc) + 1;
 
     --subtrator
     sub <= SIGNED(UNSIGNED(muxSub) - UNSIGNED(size));
 
-    --comparadorEs
+    --comparadorEs	
+	-- saída?
+	sts.i_dt_min <= '1' when i /= min else '0';
+	
+	-- ????
+	sts.aux_t_min <= '1' when Aux < min else '0';	
 
     --saidas
+	data_out <= muxData_out;
+	addr <= muxAddr1;
+	
+	
+	
 end behavioral;

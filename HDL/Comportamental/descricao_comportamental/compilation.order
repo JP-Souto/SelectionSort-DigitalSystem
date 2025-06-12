@@ -1,2 +1,5 @@
 .\src\SelectionSort_pkg.vhd
 .\src\ControlPath.vhd
+.\src\ControlPath_tb.vhd
+.\src\DataPath.vhd
+.\src\RegisterNbits.vhd

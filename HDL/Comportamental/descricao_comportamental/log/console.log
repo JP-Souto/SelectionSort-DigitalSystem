@@ -1,0 +1,187 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -O3 -e 100 -work descricao_comportamental -2002  $dsn/src/DataPath.vhd
+# Compile Entity "DataPath"
+# Compile Architecture "behavioral" of Entity "DataPath"
+# Error: COMP96_0019: DataPath.vhd : (145, 20): Keyword 'when' expected.
+# Error: COMP96_0015: DataPath.vhd : (145, 20): ';' expected.
+# Error: COMP96_0019: DataPath.vhd : (145, 38): Keyword 'when' expected.
+# Error: COMP96_0019: DataPath.vhd : (156, 21): Keyword 'when' expected.
+# Error: COMP96_0015: DataPath.vhd : (156, 21): ';' expected.
+# Error: COMP96_0019: DataPath.vhd : (156, 33): Keyword 'when' expected.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work descricao_comportamental -2002  $dsn/src/DataPath.vhd
+# Compile Entity "DataPath"
+# Compile Architecture "behavioral" of Entity "DataPath"
+# Error: COMP96_0019: DataPath.vhd : (145, 3): Keyword 'end' expected.
+# Error: COMP96_0016: DataPath.vhd : (145, 8): Design unit declaration expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work descricao_comportamental -2002  $dsn/src/DataPath.vhd
+# Compile Entity "DataPath"
+# Compile Architecture "behavioral" of Entity "DataPath"
+# Error: COMP96_0019: DataPath.vhd : (157, 3): Keyword 'end' expected.
+# Error: COMP96_0016: DataPath.vhd : (157, 8): Design unit declaration expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work descricao_comportamental -2002  $dsn/src/DataPath.vhd
+# Compile Entity "DataPath"
+# Compile Architecture "behavioral" of Entity "DataPath"
+# Error: COMP96_0617: DataPath.vhd : (145, 47): Assignment target incompatible with right side. Cannot convert 'BOOLEAN' to 'STD_LOGIC_VECTOR'.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work descricao_comportamental -2002  $dsn/src/DataPath.vhd
+# Compile Entity "DataPath"
+# Compile Architecture "behavioral" of Entity "DataPath"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work descricao_comportamental -2002  $dsn/src/DataPath.vhd
+# Compile Entity "DataPath"
+# Compile Architecture "behavioral" of Entity "DataPath"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work descricao_comportamental -2002  $dsn/src/DataPath.vhd
+# Compile Entity "DataPath"
+# Compile Architecture "behavioral" of Entity "DataPath"
+# Error: COMP96_0078: DataPath.vhd : (177, 3): Unknown identifier "muxComp".
+# Error: COMP96_0133: DataPath.vhd : (177, 3): Cannot find object declaration.
+# Error: COMP96_0078: DataPath.vhd : (177, 21): Unknown identifier "selComp".
+# Compile failure 3 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work descricao_comportamental -2002  $dsn/src/DataPath.vhd
+# Compile Entity "DataPath"
+# Compile Architecture "behavioral" of Entity "DataPath"
+# Error: COMP96_0078: DataPath.vhd : (177, 20): Unknown identifier "selComp".
+# Error: COMP96_0133: DataPath.vhd : (177, 20): Cannot find object declaration.
+# Error: COMP96_0077: DataPath.vhd : (177, 20): Undefined type of expression. Expected type 'BOOLEAN'.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort_pkg.vhd
+# Compile Package "SelectionSort_pkg"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work descricao_comportamental -2002  $dsn/src/DataPath.vhd
+# Compile Entity "DataPath"
+# Compile Architecture "behavioral" of Entity "DataPath"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work descricao_comportamental -2002  $dsn/src/DataPath.vhd
+# Compile Entity "DataPath"
+# Compile Architecture "behavioral" of Entity "DataPath"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work descricao_comportamental -2002  $dsn/src/DataPath.vhd
+# Compile Entity "DataPath"
+# Compile Architecture "behavioral" of Entity "DataPath"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work descricao_comportamental -2002  $dsn/src/DataPath.vhd
+# Compile Entity "DataPath"
+# Compile Architecture "behavioral" of Entity "DataPath"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work descricao_comportamental -2002  $dsn/src/DataPath.vhd
+# Compile Entity "DataPath"
+# Compile Architecture "behavioral" of Entity "DataPath"
+# Error: COMP96_0071: DataPath.vhd : (229, 28): Operator "+" is not defined for such operands.
+# Error: COMP96_0077: DataPath.vhd : (229, 9): Undefined type of expression. Expected type 'UNSIGNED'.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work descricao_comportamental -2002  $dsn/src/DataPath.vhd
+# Compile Entity "DataPath"
+# Compile Architecture "behavioral" of Entity "DataPath"
+# Error: COMP96_0049: DataPath.vhd : (229, 28): Syntax error in expression.
+# Error: COMP96_0019: DataPath.vhd : (229, 29): Keyword 'end' expected.
+# Error: COMP96_0016: DataPath.vhd : (233, 5): Design unit declaration expected.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work descricao_comportamental -2002  $dsn/src/DataPath.vhd
+# Compile Entity "DataPath"
+# Compile Architecture "behavioral" of Entity "DataPath"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work descricao_comportamental -2002  $dsn/src/DataPath.vhd
+# Compile Entity "DataPath"
+# Compile Architecture "behavioral" of Entity "DataPath"
+# Error: COMP96_0078: DataPath.vhd : (234, 2): Unknown identifier "aux_t_min".
+# Error: COMP96_0133: DataPath.vhd : (234, 2): Cannot find object declaration.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work descricao_comportamental -2002  $dsn/src/DataPath.vhd
+# Compile Entity "DataPath"
+# Compile Architecture "behavioral" of Entity "DataPath"
+# Error: COMP96_0143: DataPath.vhd : (234, 2): Object "cmd" cannot be written.
+# Error: COMP96_0078: DataPath.vhd : (234, 6): Unknown identifier "aux_t_min".
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work descricao_comportamental -2002  $dsn/src/DataPath.vhd
+# Compile Entity "DataPath"
+# Compile Architecture "behavioral" of Entity "DataPath"
+# Error: COMP96_0078: DataPath.vhd : (234, 2): Unknown identifier "aux_t_min".
+# Error: COMP96_0133: DataPath.vhd : (234, 2): Cannot find object declaration.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work descricao_comportamental -2002  $dsn/src/DataPath.vhd
+# Compile Entity "DataPath"
+# Compile Architecture "behavioral" of Entity "DataPath"
+# Error: COMP96_0019: DataPath.vhd : (234, 20): Keyword 'when' expected.
+# Error: COMP96_0015: DataPath.vhd : (234, 20): ';' expected.
+# Error: COMP96_0015: DataPath.vhd : (234, 22): ';' expected.
+# Error: COMP96_0019: DataPath.vhd : (234, 22): Keyword 'end' expected.
+# Error: COMP96_0016: DataPath.vhd : (234, 25): Design unit declaration expected.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work descricao_comportamental -2002  $dsn/src/DataPath.vhd
+# Compile Entity "DataPath"
+# Compile Architecture "behavioral" of Entity "DataPath"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work descricao_comportamental -2002  $dsn/src/DataPath.vhd
+# Compile Entity "DataPath"
+# Compile Architecture "behavioral" of Entity "DataPath"
+# Error: COMP96_0019: DataPath.vhd : (234, 19): Keyword 'when' expected.
+# Error: COMP96_0015: DataPath.vhd : (234, 19): ';' expected.
+# Error: COMP96_0015: DataPath.vhd : (234, 21): ';' expected.
+# Error: COMP96_0019: DataPath.vhd : (234, 21): Keyword 'end' expected.
+# Error: COMP96_0016: DataPath.vhd : (234, 24): Design unit declaration expected.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work descricao_comportamental -2002  $dsn/src/DataPath.vhd
+# Compile Entity "DataPath"
+# Compile Architecture "behavioral" of Entity "DataPath"
+# Error: COMP96_0019: DataPath.vhd : (234, 19): Keyword 'when' expected.
+# Error: COMP96_0015: DataPath.vhd : (234, 19): ';' expected.
+# Error: COMP96_0015: DataPath.vhd : (234, 21): ';' expected.
+# Error: COMP96_0019: DataPath.vhd : (234, 21): Keyword 'end' expected.
+# Error: COMP96_0016: DataPath.vhd : (234, 24): Design unit declaration expected.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work descricao_comportamental -2002  $dsn/src/DataPath.vhd
+# Compile Entity "DataPath"
+# Compile Architecture "behavioral" of Entity "DataPath"
+# Error: COMP96_0288: DataPath.vhd : (234, 2): Target of signal assignment is not a signal.
+# Error: COMP96_0263: DataPath.vhd : (234, 2): Type names are not allowed as primaries.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work descricao_comportamental -2002  $dsn/src/DataPath.vhd
+# Compile Entity "DataPath"
+# Compile Architecture "behavioral" of Entity "DataPath"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work descricao_comportamental -2002  $dsn/src/DataPath.vhd
+# Compile Entity "DataPath"
+# Compile Architecture "behavioral" of Entity "DataPath"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work descricao_comportamental -2002  $dsn/src/DataPath.vhd
+# Compile Entity "DataPath"
+# Compile Architecture "behavioral" of Entity "DataPath"
+# Error: COMP96_0077: DataPath.vhd : (227, 15): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0071: DataPath.vhd : (227, 32): Operator "=" is not defined for such operands.
+# Error: COMP96_0077: DataPath.vhd : (227, 24): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0077: DataPath.vhd : (227, 41): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work descricao_comportamental -2002  $dsn/src/DataPath.vhd
+# Compile Entity "DataPath"
+# Compile Architecture "behavioral" of Entity "DataPath"
+# Error: COMP96_0077: DataPath.vhd : (227, 15): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0071: DataPath.vhd : (227, 33): Operator "<=" is not defined for such operands.
+# Error: COMP96_0077: DataPath.vhd : (227, 24): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0077: DataPath.vhd : (227, 42): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work descricao_comportamental -2002  $dsn/src/DataPath.vhd
+# Compile Entity "DataPath"
+# Compile Architecture "behavioral" of Entity "DataPath"
+# Error: COMP96_0077: DataPath.vhd : (227, 15): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0071: DataPath.vhd : (227, 45): Operator "<=" is not defined for such operands.
+# Error: COMP96_0077: DataPath.vhd : (227, 24): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0077: DataPath.vhd : (227, 54): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work descricao_comportamental -2002  $dsn/src/DataPath.vhd
+# Compile Entity "DataPath"
+# Compile Architecture "behavioral" of Entity "DataPath"
+# Error: COMP96_0077: DataPath.vhd : (227, 15): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0071: DataPath.vhd : (227, 45): Operator "<=" is not defined for such operands.
+# Error: COMP96_0077: DataPath.vhd : (227, 24): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0077: DataPath.vhd : (227, 54): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work descricao_comportamental -2002  $dsn/src/DataPath.vhd
+# Compile Entity "DataPath"
+# Compile Architecture "behavioral" of Entity "DataPath"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work descricao_comportame
