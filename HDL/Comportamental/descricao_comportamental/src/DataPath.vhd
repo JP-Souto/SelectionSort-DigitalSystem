@@ -47,14 +47,14 @@ begin
 	--esse registrador funciona igual a logica do logisim?
     REG_ORDER: entity work.RegisterNbits
         generic map (
-            WIDTH   => 1
+            WIDTH   => DATA_WIDTH
         )
         port map (
             clk   => clk,
             rst   => rst,
             ce      => cmd.wrOrder,
-            d       => data(0 downto 0),
-            q       => order(0 downto 0)            
+            d       => data,
+            q       => order            
         );
 
     REG_STARTADDR: entity work.RegisterNbits
@@ -245,8 +245,8 @@ begin
 	sts.i_dt_min <= '1' when i /= min else '0';
 	
 	sts.aux_t_min <= '1' when
-    	(order(0) = '1' and unsigned(aux) < unsigned(min)) or
-    	(order(0) = '0' and unsigned(aux) > unsigned(min))
+    	(order(0) = '1' and unsigned(aux) < unsigned(data_in)) or
+    	(order(0) = '0' and unsigned(aux) > unsigned(data_in))
 	else
    	 	'0';
 

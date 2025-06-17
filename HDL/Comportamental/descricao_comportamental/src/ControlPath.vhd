@@ -138,8 +138,7 @@ begin
 		-- Mux
 		cmd.seli1 <= '1' when currentState = S1 else '0';
 		cmd.selComp <= '1' when currentState = S5 else '0';
-		cmd.selAddr0 <= '1' when currentState =	S5 or
-								 currentState = S9 or
+		cmd.selAddr0 <= '1' when currentState = S9 or
 								 currentState = S12 else '0';
 		cmd.selAddr1 <= '1' when currentState =	S5 or
 								 currentState = S9 or

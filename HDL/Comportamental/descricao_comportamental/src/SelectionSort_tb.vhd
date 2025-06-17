@@ -5,29 +5,26 @@ use IEEE.numeric_std.all;
 entity SelectionSort_tb is
 end SelectionSort_tb;
 
-architecture behavioral of SelectionSort_tb is      
-    constant DATA_WIDTH       : integer :=  8;
-    constant ADDR_WIDTH       : integer :=  8;
+architecture behavioral of SelectionSort_tb is  
+   
+    constant DATA_WIDTH     : integer := 8;
+    constant ADDR_WIDTH     : integer := 8;
+    
+    signal rst, data_av       : std_logic; 
+    signal size, startAddr, order  : std_logic_vector(ADDR_WIDTH-1 downto 0);
+    signal clk              : std_logic := '0';
+    signal wr1, wr2         : std_logic;   --ld
+    signal ce1, ce2         : std_logic;   --sel
+    signal up               : std_logic;
+    signal done1, done2     : std_logic;
+    signal address1, address2    : std_logic_vector(ADDR_WIDTH-1 downto 0);
+	signal data				:  std_logic_vector(DATA_WIDTH-1 downto 0); 
+    signal bs1_data_in, bs1_data_out : std_logic_vector(DATA_WIDTH-1 downto 0);
+    signal bs2_data_in, bs2_data_out : std_logic_vector(DATA_WIDTH-1 downto 0);    
 
-    signal clk                : std_logic := '0';
-    signal rst, data_av       : std_logic;
-
-    -- Entrada de dados
-    signal data_in, data, data_in2      : std_logic_vector(DATA_WIDTH-1 downto 0);
-
-    -- Saída de dados
-    signal addr, dataOut, addr2, dataOut2   : std_logic_vector(DATA_WIDTH-1 downto 0);
-
-    --Saída de dados memory
-    signal dataOutMem, dataOutMem2         : std_logic_vector(DATA_WIDTH-1 downto 0);
-
-    -- Controle da memory
-    signal sel, ld, sel2, ld2              : std_logic;
-    -- Saída done
-    signal done, done2                     : std_logic;
 
 begin
-	
+
     SelectionSort_STR: entity work.SelectionSort(structural) 
     generic map (
         DATA_WIDTH    => DATA_WIDTH
@@ -37,16 +34,16 @@ begin
         rst         => rst,
         data_av     => data_av,
         done        => done2,
-        data_in     => data_in2,
+        data_in     => bs2_data_in,
         data        => data,
         -- Memory interface
-        sel         => sel2,
-        ld          => ld2,
-        data_out     => dataOut2,
-        addr     => addr2
+        sel         => ce2,
+        ld          => wr2,
+        data_out     => bs2_data_out,
+        addr     => address2
     );
         
-    RAM_STR: entity work.memory
+    RAM_STR: entity work.Memory
         generic map (
             DATA_WIDTH    => DATA_WIDTH,
             ADDR_WIDTH    => ADDR_WIDTH,
@@ -54,13 +51,12 @@ begin
         )
         port map (
             clk       => clk,
-            ce          => sel2,
-            wr          => ld2,
-            data_in      => dataOut2,
-            data_out      => dataOutMem2,
-            address     => addr2
+            ce          => ce2,
+            wr          => wr2,
+            data_in     => bs2_data_out,
+            data_out    => bs2_data_in,
+            address     => address2
         );
-
 		clk <= not clk after 20 ns;    -- 25 MHz
 	process
 	
@@ -70,9 +66,9 @@ begin
         wait until  clk = '1';
         wait until  clk = '1';
         rst <= '0';
+		data <= (others => '0');
         wait until  clk = '1';
         report "Informando posicao zero na memória para o startAddr";
-        data <= (others => '0');
 		data_av <= '1';
 		wait until  clk = '1';
 		report "informa size = 5";
@@ -83,7 +79,7 @@ begin
 		wait until clk = '1';
 		data_av <= '0';
 		
-		wait until done = '1';
+		wait until done1 = '1' or done2 = '1';
 		
 		
         
