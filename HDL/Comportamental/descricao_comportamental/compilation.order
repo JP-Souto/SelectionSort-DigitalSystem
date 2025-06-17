@@ -3,3 +3,7 @@
 .\src\ControlPath_tb.vhd
 .\src\DataPath.vhd
 .\src\RegisterNbits.vhd
+.\src\memory.vhd
+.\src\util_pkg.vhd
+.\src\SelectionSort.vhd
+.\src\SelectionSort_tb.vhd

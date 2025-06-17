@@ -4,3 +4,7 @@ i<>.\src\ControlPath.vhd
 i<>.\src\ControlPath_tb.vhd
 i<>.\src\DataPath.vhd
 i<>.\src\RegisterNbits.vhd
+i<>.\src\memory.vhd
+i<>.\src\util_pkg.vhd
+i<>.\src\SelectionSort.vhd
+i<>.\src\SelectionSort_tb.vhd

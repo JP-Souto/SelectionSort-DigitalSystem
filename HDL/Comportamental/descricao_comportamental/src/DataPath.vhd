@@ -38,6 +38,7 @@ architecture behavioral of DataPath is
     signal sum                                   :   UNSIGNED(DATA_WIDTH - 1 downto 0);
     signal compDt, compAux                                   :   std_logic_vector(DATA_WIDTH - 1 downto 0);
     signal sub                                   :   SIGNED(DATA_WIDTH - 1 downto 0);
+	signal arrayEnd								 : std_logic_vector(DATA_WIDTH - 1 downto 0);
 
 begin
 
@@ -53,7 +54,7 @@ begin
             rst   => rst,
             ce      => cmd.wrOrder,
             d       => data(0 downto 0),
-            q       => order            
+            q       => order(0 downto 0)            
         );
 
     REG_STARTADDR: entity work.RegisterNbits
@@ -66,7 +67,10 @@ begin
             ce      => cmd.wrStartAddr,
             d       => data,
             q       => startAddr            
-        );
+        ); 
+		
+
+		
     REG_SIZE: entity work.RegisterNbits
         generic map (
             WIDTH   => DATA_WIDTH
@@ -75,7 +79,7 @@ begin
             clk   => clk,
             rst   => rst,
             ce      => cmd.wrSize,
-            d       => data,
+            d       =>  arrayEnd,
             q       => size            
         );
 
@@ -91,7 +95,7 @@ begin
             q       => i            
         );
 
-    REG_MIN: entity work.RegisterNbits
+    REG_J: entity work.RegisterNbits
         generic map (
             WIDTH   => DATA_WIDTH
         )
@@ -102,7 +106,7 @@ begin
             d       => STD_LOGIC_VECTOR(sum),
             q       => j            
         );
-    REG_J: entity work.RegisterNbits
+    REG_MIN: entity work.RegisterNbits
         generic map (
             WIDTH   => DATA_WIDTH
         )
@@ -142,7 +146,7 @@ begin
 	
 	--aux_t_min <= '1' i /= min else '0';
 		
-	muxI <= startAddr when cmd.seli1 <= '1' else STD_LOGIC_VECTOR(sum);
+	muxI <= startAddr when cmd.seli1 = '1' else STD_LOGIC_VECTOR(sum);
      --process(cmd.seli1, startAddr, sum)
      --begin
        -- if cmd.seli1 = '1' then
@@ -152,7 +156,7 @@ begin
         --end if;
      --end process;
 	 
-	 muxInc <= j when cmd.selInc <= '1' else i;
+	 muxInc <= j when cmd.selInc = '1' else i;
 	 --when cmd.selInc <= '1' muxInc <= j else muxInc <= i;
      --process(cmd.selInc, i, j)
      --begin
@@ -163,7 +167,7 @@ begin
      --   end if;
      --end process;
 	 
-	 muxMin <= j when cmd.selMin <= '1' else i;
+	 muxMin <= j when cmd.selMin = '1' else i;
      --process(cmd.selMin, i, j)
      --begin
      --   if cmd.selMin = '1' then
@@ -174,7 +178,7 @@ begin
      ---end process;
 	 
 
-	 muxSub <= j when cmd.selComp <= '1' else STD_logic_vector(sum); 
+	 muxSub <= j when cmd.selComp = '1' else STD_logic_vector(sum); 
      --process(cmd.selComp, sum, j)
      --begin
      --   if cmd.selComp = '1' then
@@ -184,7 +188,7 @@ begin
      --   end if;
      --end process;
 	 
-	 muxAddr0 <= i when cmd.selAddr0 <= '1' else j;
+	 muxAddr0 <= i when cmd.selAddr0 = '1' else j;
      --process(cmd.selAddr0, j, i)
      --begin
      --   if cmd.selAddr0 = '1' then
@@ -194,7 +198,7 @@ begin
      --   end if;
      --end process;
 	 
-	 muxAddr1 <= muxAddr0 when cmd.selAddr1 <= '1' else min;
+	 muxAddr1 <= muxAddr0 when cmd.selAddr1 = '1' else min;
      --process(cmd.selAddr1, muxAddr0, min)
      --begin
      --  if cmd.selAddr1 = '1' then
@@ -227,23 +231,28 @@ begin
 	 -- Mux Order
 	 --MuxOrder <= '1' when order <= '1' else '0';
 
-    --somador	   	
-	sum <= UNSIGNED(muxInc) + 1;
+    --somador e size+startAddr	   	
+	sum <= UNSIGNED(muxInc) + 1; 
+	
+	arrayEnd <= std_logic_vector(unsigned(data) + unsigned(startAddr)); 
 
     --subtrator
     sub <= SIGNED(UNSIGNED(muxSub) - UNSIGNED(size));
 
-    --comparadorEs	
-	-- saída?
+	
+    --saidas
+		    --comparadorEs
 	sts.i_dt_min <= '1' when i /= min else '0';
 	
-	-- ????
-	sts.aux_t_min <= '1' when Aux < min else '0';	
+	sts.aux_t_min <= '1' when
+    	(order(0) = '1' and unsigned(aux) < unsigned(min)) or
+    	(order(0) = '0' and unsigned(aux) > unsigned(min))
+	else
+   	 	'0';
 
-    --saidas
 	data_out <= muxData_out;
 	addr <= muxAddr1;
-	
+	sts.lt_size <= sub(7);
 	
 	
 end behavioral;
