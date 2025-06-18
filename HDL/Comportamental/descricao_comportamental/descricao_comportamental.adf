@@ -16,13 +16,30 @@ LANGUAGE=VHDL
 REFRESH_FLOW=1
 FLOWTOOLS=NONE
 FAMILY=
+fileopenfolder=C:\Users\jpsou\OneDrive\Documentos\SelectionSort - Digital System\HDL\Comportamental\descricao_comportamental\src
 [Files]
 /SelectionSort_pkg.vhd=-1
+/ControlPath.vhd=-1
+/ControlPath_tb.vhd=-1
+/DataPath.vhd=-1
+/RegisterNbits.vhd=-1
+/memory.vhd=-1
+/util_pkg.vhd=-1
+/SelectionSort.vhd=-1
+/SelectionSort_tb.vhd=-1
 /ControlPath.vhd=-1
 [Files.Data]
 .\src\SelectionSort_pkg.vhd=VHDL Source Code
 .\src\ControlPath.vhd=VHDL Source Code
+.\src\ControlPath_tb.vhd=VHDL Source Code
+.\src\DataPath.vhd=VHDL Source Code
+.\src\RegisterNbits.vhd=VHDL Source Code
+.\src\memory.vhd=VHDL Source Code
+.\src\util_pkg.vhd=VHDL Source Code
+.\src\SelectionSort.vhd=VHDL Source Code
+.\src\SelectionSort_tb.vhd=VHDL Source Code
+.\src\ControlPath.vhd=VHDL Source Code
 [HierarchyViewer]
-HierarchyInformation=
+HierarchyInformation=selectionsort_tb|behavioral|0
 ShowHide=ShowTopLevel
 Selected=

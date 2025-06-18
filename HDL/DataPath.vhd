@@ -176,5 +176,6 @@ begin
 	data_out <= muxData_out;
 	addr <= muxAddr1;
 	sts.lt_size <= sub(7);
-
+	
+	
 end behavioral;

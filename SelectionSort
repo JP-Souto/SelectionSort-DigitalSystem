@@ -5,7 +5,8 @@ void SelectionSort(char *array, char size, int order) {
 
     char i, j, min, aux, aux2;
 	char startAddr = 0;
-
+	size = size + startAddr;
+	
     for (i = startAddr; i + 1 < size; i++) {
         min = i;
 

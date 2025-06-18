@@ -1,0 +1,1030 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/ControlPath.vhd
+# Compile Entity "ControlPath"
+# Compile Architecture "behavioral" of Entity "ControlPath"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort_tb.vhd
+# Compile Entity "SelectionSort_tb"
+# Compile Architecture "behavioral" of Entity "SelectionSort_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+selectionsort_tb selectionsort_tb behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6810 kB (elbread=427 elab2=6100 kernel=281 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\jpsou\OneDrive\Documentos\SelectionSort - Digital System\HDL\Comportamental\descricao_comportamental\src\wave.asdb
+#  12:15, quarta-feira, 18 de junho de 2025
+#  Simulation has been initialized
+# add wave -noreg {/SelectionSort_tb/rst}
+# add wave -noreg {/SelectionSort_tb/data_av}
+# add wave -noreg {/SelectionSort_tb/size}
+# add wave -noreg {/SelectionSort_tb/startAddr}
+# add wave -noreg {/SelectionSort_tb/order}
+# add wave -noreg {/SelectionSort_tb/clk}
+# add wave -noreg {/SelectionSort_tb/wr1}
+# add wave -noreg {/SelectionSort_tb/wr2}
+# add wave -noreg {/SelectionSort_tb/ce1}
+# add wave -noreg {/SelectionSort_tb/ce2}
+# add wave -noreg {/SelectionSort_tb/up}
+# add wave -noreg {/SelectionSort_tb/done1}
+# add wave -noreg {/SelectionSort_tb/done2}
+# add wave -noreg {/SelectionSort_tb/address1}
+# add wave -noreg {/SelectionSort_tb/address2}
+# add wave -noreg {/SelectionSort_tb/data}
+# add wave -noreg {/SelectionSort_tb/bs1_data_in}
+# add wave -noreg {/SelectionSort_tb/bs1_data_out}
+# add wave -noreg {/SelectionSort_tb/bs2_data_in}
+# add wave -noreg {/SelectionSort_tb/bs2_data_out}
+# VSIM: 20 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/jpsou/OneDrive/Documentos/SelectionSort - Digital System/HDL/Comportamental/descricao_comportamental/src/wave.asdb'.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+# VSIM: 8 object(s) traced.
+# VSIM: 29 object(s) traced.
+run 120 ns
+# EXECUTION:: NOTE   : Testbench - 2, 3, 5, 1 4, order = 1, size = 5
+# EXECUTION:: Time: 0 ps,  Iteration: 0,  Instance: /SelectionSort_tb,  Process: line__61.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /SelectionSort_tb/RAM_STR,  Process: line__59.
+# EXECUTION:: NOTE   : Informando posicao zero na memória para o startAddr
+# EXECUTION:: Time: 100 ns,  Iteration: 0,  Instance: /SelectionSort_tb,  Process: line__61.
+# KERNEL: stopped at time: 120 ns
+run 120 ns
+# EXECUTION:: NOTE   : informa size = 5
+# EXECUTION:: Time: 140 ns,  Iteration: 0,  Instance: /SelectionSort_tb,  Process: line__61.
+# EXECUTION:: NOTE   : informa order = 0
+# EXECUTION:: Time: 180 ns,  Iteration: 0,  Instance: /SelectionSort_tb,  Process: line__61.
+# KERNEL: stopped at time: 240 ns
+run 120 ns
+# KERNEL: stopped at time: 360 ns
+run 120 ns
+# KERNEL: stopped at time: 480 ns
+run 120 ns
+# KERNEL: stopped at time: 600 ns
+run 120 ns
+# KERNEL: stopped at time: 720 ns
+run 120 ns
+# KERNEL: stopped at time: 840 ns
+run 120 ns
+# KERNEL: stopped at time: 960 ns
+run 120 ns
+# KERNEL: stopped at time: 1080 ns
+run 120 ns
+# KERNEL: stopped at time: 1200 ns
+run 120 ns
+# KERNEL: stopped at time: 1320 ns
+run 120 ns
+# KERNEL: stopped at time: 1440 ns
+run 120 ns
+# KERNEL: stopped at time: 1560 ns
+run 120 ns
+# KERNEL: stopped at time: 1680 ns
+run 120 ns
+# KERNEL: stopped at time: 1800 ns
+run 120 ns
+# KERNEL: stopped at time: 1920 ns
+run 120 ns
+# KERNEL: stopped at time: 2040 ns
+run 120 ns
+# KERNEL: stopped at time: 2160 ns
+run 120 ns
+# KERNEL: stopped at time: 2280 ns
+run 120 ns
+# KERNEL: stopped at time: 2400 ns
+run 120 ns
+# KERNEL: stopped at time: 2520 ns
+run 120 ns
+# KERNEL: stopped at time: 2640 ns
+run 120 ns
+# KERNEL: stopped at time: 2760 ns
+run 120 ns
+# KERNEL: stopped at time: 2880 ns
+run 120 ns
+# EXECUTION:: NOTE   : Testbench - 2, 3, 5, 1 4, order = 1, size = 5
+# EXECUTION:: Time: 2980 ns,  Iteration: 0,  Instance: /SelectionSort_tb,  Process: line__61.
+# KERNEL: stopped at time: 3 us
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort_tb.vhd
+# Compile Entity "SelectionSort_tb"
+# Compile Architecture "behavioral" of Entity "SelectionSort_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  46.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Error: COMP96_0019: SelectionSort.vhd : (64, 2): Keyword 'begin' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Error: COMP96_0015: SelectionSort.vhd : (75, 2): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Error: COMP96_0019: SelectionSort.vhd : (101, 7): Keyword 'case' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (105, 6): Keyword 'if' expected.
+# Error: COMP96_0358: SelectionSort.vhd : (105, 6): Statement is not labeled.
+# Error: COMP96_0019: SelectionSort.vhd : (108, 2): Keyword 'end' expected.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Error: COMP96_0015: SelectionSort.vhd : (101, 3): ';' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (101, 7): Keyword 'if' expected.
+# Error: COMP96_0015: SelectionSort.vhd : (101, 7): ';' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (105, 6): Keyword 'process' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (108, 2): Keyword 'end' expected.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Error: COMP96_0019: SelectionSort.vhd : (101, 7): Keyword 'if' expected.
+# Error: COMP96_0015: SelectionSort.vhd : (101, 7): ';' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (105, 6): Keyword 'process' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (108, 2): Keyword 'end' expected.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Error: COMP96_0019: SelectionSort.vhd : (101, 7): Keyword 'if' expected.
+# Error: COMP96_0015: SelectionSort.vhd : (101, 7): ';' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (105, 6): Keyword 'process' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (108, 2): Keyword 'end' expected.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Error: COMP96_0019: SelectionSort.vhd : (101, 7): Keyword 'if' expected.
+# Error: COMP96_0015: SelectionSort.vhd : (101, 7): ';' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (105, 6): Keyword 'process' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (108, 2): Keyword 'end' expected.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Error: COMP96_0019: SelectionSort.vhd : (101, 8): Keyword 'if' expected.
+# Error: COMP96_0015: SelectionSort.vhd : (101, 8): ';' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (105, 6): Keyword 'process' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (108, 2): Keyword 'end' expected.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Error: COMP96_0019: SelectionSort.vhd : (101, 8): Keyword 'if' expected.
+# Error: COMP96_0015: SelectionSort.vhd : (101, 8): ';' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (105, 6): Keyword 'process' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (108, 2): Keyword 'end' expected.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Error: COMP96_0301: SelectionSort.vhd : (73, 5): The choice 'others' must be present when all alternatives are not covered.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+step -out
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Error: COMP96_0015: SelectionSort.vhd : (102, 7): ';' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (103, 8): Keyword 'then' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (104, 7): Keyword 'end' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (105, 8): Keyword 'case' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (111, 6): Keyword 'end' expected.
+# Error: COMP96_0015: SelectionSort.vhd : (114, 9): ';' expected.
+# Error: COMP96_0016: SelectionSort.vhd : (114, 13): Design unit declaration expected.
+# Compile failure 7 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Error: COMP96_0015: SelectionSort.vhd : (102, 7): ';' expected.
+# Error: COMP96_0015: SelectionSort.vhd : (104, 7): ';' expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Error: COMP96_0015: SelectionSort.vhd : (102, 7): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Error: COMP96_0078: SelectionSort.vhd : (101, 26): Unknown identifier "reg_i".
+# Error: COMP96_0133: SelectionSort.vhd : (101, 26): Cannot find object declaration.
+# Error: COMP96_0149: SelectionSort.vhd : (101, 26): Explicit type conversions are allowed between closely related types only.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Error: COMP96_0078: SelectionSort.vhd : (101, 26): Unknown identifier "reg_i".
+# Error: COMP96_0133: SelectionSort.vhd : (101, 26): Cannot find object declaration.
+# Error: COMP96_0149: SelectionSort.vhd : (101, 26): Explicit type conversions are allowed between closely related types only.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Error: COMP96_0049: SelectionSort.vhd : (123, 5): Syntax error in expression.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  15.0 [ms]
+step -out
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# A feature of VHDL 2008 has been detected. Use the -2008 argument of the vcom command.
+# Error: COMP96_0015: SelectionSort.vhd : (116, 6): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Error: COMP96_0049: SelectionSort.vhd : (116, 6): Syntax error in expression.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Error: COMP96_0617: SelectionSort.vhd : (130, 26): Assignment target incompatible with right side. Cannot convert 'UNSIGNED' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: SelectionSort.vhd : (132, 26): Assignment target incompatible with right side. Cannot convert 'UNSIGNED' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: SelectionSort.vhd : (134, 26): Assignment target incompatible with right side. Cannot convert 'UNSIGNED' to 'STD_LOGIC_VECTOR'.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Error: COMP96_0617: SelectionSort.vhd : (132, 26): Assignment target incompatible with right side. Cannot convert 'UNSIGNED' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: SelectionSort.vhd : (134, 26): Assignment target incompatible with right side. Cannot convert 'UNSIGNED' to 'STD_LOGIC_VECTOR'.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Compile success 0 Errors 0 Warnings  Analysis time :  46.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+# Warning: Cannot set breakpoint. No executable statement found or debugging data is unavailable. Compile source files with the -dbg argument of the acom/alog command or check the Enable Debug option in the Compilation | VHDL/Verilog category of the Design Settings dialog box.
+# Warning: Cannot set breakpoint. No executable statement found or debugging data is unavailable. Compile source files with the -dbg argument of the acom/alog command or check the Enable Debug option in the Compilation | VHDL/Verilog category of the Design Settings dialog box.
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Error: COMP96_0617: SelectionSort.vhd : (152, 30): Assignment target incompatible with right side. Cannot convert 'UNSIGNED' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0078: SelectionSort.vhd : (154, 18): Unknown identifier "dataOut".
+# Error: COMP96_0133: SelectionSort.vhd : (154, 18): Cannot find object declaration.
+# Error: COMP96_0078: SelectionSort.vhd : (156, 18): Unknown identifier "dataOut".
+# Error: COMP96_0133: SelectionSort.vhd : (156, 18): Cannot find object declaration.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Error: COMP96_0078: SelectionSort.vhd : (154, 18): Unknown identifier "dataOut".
+# Error: COMP96_0133: SelectionSort.vhd : (154, 18): Cannot find object declaration.
+# Error: COMP96_0078: SelectionSort.vhd : (156, 18): Unknown identifier "dataOut".
+# Error: COMP96_0133: SelectionSort.vhd : (156, 18): Cannot find object declaration.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Error: COMP96_0078: SelectionSort.vhd : (154, 18): Unknown identifier "dataOut".
+# Error: COMP96_0133: SelectionSort.vhd : (154, 18): Cannot find object declaration.
+# Error: COMP96_0078: SelectionSort.vhd : (156, 18): Unknown identifier "dataOut".
+# Error: COMP96_0133: SelectionSort.vhd : (156, 18): Cannot find object declaration.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Error: COMP96_0617: SelectionSort.vhd : (111, 17): Assignment target incompatible with right side. Cannot convert 'STD_LOGIC_VECTOR' to 'UNSIGNED'.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Error: COMP96_0015: SelectionSort.vhd : (114, 7): ';' expected.
+# Error: COMP96_0015: SelectionSort.vhd : (116, 7): ';' expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Error: COMP96_0078: SelectionSort.vhd : (115, 8): Unknown identifier "currentsState".
+# Error: COMP96_0133: SelectionSort.vhd : (115, 8): Cannot find object declaration.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Error: COMP96_0019: SelectionSort.vhd : (139, 10): Keyword 'then' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (140, 7): Keyword 'end' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (141, 8): Keyword 'case' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (143, 7): Keyword 'end' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (147, 7): Keyword 'end' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (151, 7): Keyword 'end' expected.
+# Error: COMP96_0016: SelectionSort.vhd : (151, 12): Design unit declaration expected.
+# Compile failure 7 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Error: COMP96_0019: SelectionSort.vhd : (139, 10): Keyword 'then' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (140, 7): Keyword 'end' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (141, 8): Keyword 'case' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (143, 7): Keyword 'end' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (147, 7): Keyword 'end' expected.
+# Error: COMP96_0016: SelectionSort.vhd : (147, 12): Design unit declaration expected.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Error: COMP96_0019: SelectionSort.vhd : (139, 10): Keyword 'then' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (140, 7): Keyword 'end' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (141, 8): Keyword 'case' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (144, 7): Keyword 'end' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (148, 7): Keyword 'end' expected.
+# Error: COMP96_0016: SelectionSort.vhd : (148, 12): Design unit declaration expected.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Error: COMP96_0019: SelectionSort.vhd : (139, 10): Keyword 'then' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (140, 7): Keyword 'end' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (141, 8): Keyword 'case' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (144, 7): Keyword 'end' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (148, 7): Keyword 'end' expected.
+# Error: COMP96_0016: SelectionSort.vhd : (148, 12): Design unit declaration expected.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Error: COMP96_0019: SelectionSort.vhd : (139, 10): Keyword 'then' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (140, 7): Keyword 'end' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (141, 8): Keyword 'case' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (144, 7): Keyword 'end' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (148, 7): Keyword 'end' expected.
+# Error: COMP96_0016: SelectionSort.vhd : (148, 12): Design unit declaration expected.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Error: COMP96_0019: SelectionSort.vhd : (139, 10): Keyword 'then' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (140, 7): Keyword 'end' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (141, 8): Keyword 'case' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (144, 7): Keyword 'end' expected.
+# Error: COMP96_0019: SelectionSort.vhd : (148, 7): Keyword 'end' expected.
+# Error: COMP96_0016: SelectionSort.vhd : (148, 12): Design unit declaration expected.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Compile success 0 Errors 0 Warnings  Analysis time :  46.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort_tb.vhd
+# Compile Entity "SelectionSort_tb"
+# Compile Architecture "behavioral" of Entity "SelectionSort_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+selectionsort_tb selectionsort_tb behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/ControlPath.vhd
+# Compile Entity "ControlPath"
+# Compile Architecture "behavioral" of Entity "ControlPath"
+# Error: COMP96_0029: ControlPath.vhd : (71, 21): Expression expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/ControlPath.vhd
+# Compile Entity "ControlPath"
+# Compile Architecture "behavioral" of Entity "ControlPath"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+selectionsort_tb selectionsort_tb behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6843 kB (elbread=427 elab2=6127 kernel=288 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\jpsou\OneDrive\Documentos\SelectionSort - Digital System\HDL\Comportamental\descricao_comportamental\src\wave.asdb
+#  16:27, quarta-feira, 18 de junho de 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/jpsou/OneDrive/Documentos/SelectionSort - Digital System/HDL/Comportamental/descricao_comportamental/src/wave.asdb'.
+# Warning: WAVEFORM: Object matching /SelectionSort_tb/up not found in C:/Users/jpsou/OneDrive/Documentos/SelectionSort - Digital System/HDL/Comportamental/descricao_comportamental/src/wave.asdb.
+# add wave -noreg {/SelectionSort_tb/rst}
+# add wave -noreg {/SelectionSort_tb/data_av}
+# add wave -noreg {/SelectionSort_tb/size}
+# add wave -noreg {/SelectionSort_tb/startAddr}
+# add wave -noreg {/SelectionSort_tb/order}
+# add wave -noreg {/SelectionSort_tb/clk}
+# add wave -noreg {/SelectionSort_tb/wr1}
+# add wave -noreg {/SelectionSort_tb/wr2}
+# add wave -noreg {/SelectionSort_tb/ce1}
+# add wave -noreg {/SelectionSort_tb/ce2}
+# add wave -noreg {/SelectionSort_tb/done1}
+# add wave -noreg {/SelectionSort_tb/done2}
+# add wave -noreg {/SelectionSort_tb/address1}
+# add wave -noreg {/SelectionSort_tb/address2}
+# add wave -noreg {/SelectionSort_tb/data}
+# add wave -noreg {/SelectionSort_tb/bs1_data_in}
+# add wave -noreg {/SelectionSort_tb/bs1_data_out}
+# add wave -noreg {/SelectionSort_tb/bs2_data_in}
+# add wave -noreg {/SelectionSort_tb/bs2_data_out}
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/rst" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/data_av" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/size" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/startAddr" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/order" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/clk" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/wr1" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/wr2" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/ce1" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/ce2" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/done1" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/done2" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/address1" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/address2" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/data" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/bs1_data_in" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/bs1_data_out" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/bs2_data_in" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/bs2_data_out" has already been traced.
+# VSIM: 0 object(s) traced.
+# add wave -noreg {/SelectionSort_tb/rst}
+# add wave -noreg {/SelectionSort_tb/data_av}
+# add wave -noreg {/SelectionSort_tb/size}
+# add wave -noreg {/SelectionSort_tb/startAddr}
+# add wave -noreg {/SelectionSort_tb/order}
+# add wave -noreg {/SelectionSort_tb/clk}
+# add wave -noreg {/SelectionSort_tb/wr1}
+# add wave -noreg {/SelectionSort_tb/wr2}
+# add wave -noreg {/SelectionSort_tb/ce1}
+# add wave -noreg {/SelectionSort_tb/ce2}
+# add wave -noreg {/SelectionSort_tb/done1}
+# add wave -noreg {/SelectionSort_tb/done2}
+# add wave -noreg {/SelectionSort_tb/address1}
+# add wave -noreg {/SelectionSort_tb/address2}
+# add wave -noreg {/SelectionSort_tb/data}
+# add wave -noreg {/SelectionSort_tb/bs1_data_in}
+# add wave -noreg {/SelectionSort_tb/bs1_data_out}
+# add wave -noreg {/SelectionSort_tb/bs2_data_in}
+# add wave -noreg {/SelectionSort_tb/bs2_data_out}
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/rst" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/data_av" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/size" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/startAddr" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/order" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/clk" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/wr1" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/wr2" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/ce1" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/ce2" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/done1" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/done2" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/address1" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/address2" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/data" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/bs1_data_in" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/bs1_data_out" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/bs2_data_in" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/bs2_data_out" has already been traced.
+# VSIM: 0 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/jpsou/OneDrive/Documentos/SelectionSort - Digital System/HDL/Comportamental/descricao_comportamental/src/wave.asdb'.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/SelectionSort_STR/CONTROL_PATH/currentState" has already been traced.
+# VSIM: 0 object(s) traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/SelectionSort_STR/CONTROL_PATH/nextState" has already been traced.
+# VSIM: 0 object(s) traced.
+# VSIM: 19 object(s) traced.
+# VSIM: 8 object(s) traced.
+run 120 ns
+# EXECUTION:: NOTE   : Testbench - 2, 3, 5, 1 4, order = 1, size = 5
+# EXECUTION:: Time: 0 ps,  Iteration: 0,  Instance: /SelectionSort_tb,  Process: line__92.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /SelectionSort_tb/RAM_BEH,  Process: line__59.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /SelectionSort_tb/RAM_STR,  Process: line__59.
+# EXECUTION:: NOTE   : Informando posicao zero na memória para o startAddr
+# EXECUTION:: Time: 100 ns,  Iteration: 0,  Instance: /SelectionSort_tb,  Process: line__92.
+# KERNEL: stopped at time: 120 ns
+run 120 ns
+# EXECUTION:: NOTE   : informa size = 5
+# EXECUTION:: Time: 140 ns,  Iteration: 0,  Instance: /SelectionSort_tb,  Process: line__92.
+# EXECUTION:: NOTE   : informa order = 0
+# EXECUTION:: Time: 180 ns,  Iteration: 0,  Instance: /SelectionSort_tb,  Process: line__92.
+# KERNEL: stopped at time: 240 ns
+run 120 ns
+# KERNEL: stopped at time: 360 ns
+run 120 ns
+# KERNEL: stopped at time: 480 ns
+run 120 ns
+# KERNEL: stopped at time: 600 ns
+run 120 ns
+# KERNEL: stopped at time: 720 ns
+run 120 ns
+# KERNEL: stopped at time: 840 ns
+run 120 ns
+# KERNEL: stopped at time: 960 ns
+run 120 ns
+# KERNEL: stopped at time: 1080 ns
+run 120 ns
+# KERNEL: stopped at time: 1200 ns
+run 120 ns
+# KERNEL: stopped at time: 1320 ns
+run 120 ns
+# KERNEL: stopped at time: 1440 ns
+run 120 ns
+# KERNEL: stopped at time: 1560 ns
+run 120 ns
+# KERNEL: stopped at time: 1680 ns
+run 120 ns
+# KERNEL: stopped at time: 1800 ns
+run 120 ns
+# KERNEL: stopped at time: 1920 ns
+run 120 ns
+# KERNEL: stopped at time: 2040 ns
+run 120 ns
+# KERNEL: stopped at time: 2160 ns
+run 120 ns
+# KERNEL: stopped at time: 2280 ns
+run 120 ns
+# KERNEL: stopped at time: 2400 ns
+run 120 ns
+# KERNEL: stopped at time: 2520 ns
+run 120 ns
+# KERNEL: stopped at time: 2640 ns
+run 120 ns
+# KERNEL: stopped at time: 2760 ns
+run 120 ns
+# KERNEL: stopped at time: 2880 ns
+run 120 ns
+# EXECUTION:: NOTE   : Testbench - 2, 3, 5, 1 4, order = 1, size = 5
+# EXECUTION:: Time: 2980 ns,  Iteration: 0,  Instance: /SelectionSort_tb,  Process: line__92.
+# KERNEL: stopped at time: 3 us
+run 120 ns
+# EXECUTION:: NOTE   : Informando posicao zero na memória para o startAddr
+# EXECUTION:: Time: 3100 ns,  Iteration: 0,  Instance: /SelectionSort_tb,  Process: line__92.
+# KERNEL: stopped at time: 3120 ns
+run 120 ns
+# EXECUTION:: NOTE   : informa size = 5
+# EXECUTION:: Time: 3140 ns,  Iteration: 0,  Instance: /SelectionSort_tb,  Process: line__92.
+# EXECUTION:: NOTE   : informa order = 0
+# EXECUTION:: Time: 3180 ns,  Iteration: 0,  Instance: /SelectionSort_tb,  Process: line__92.
+# KERNEL: stopped at time: 3240 ns
+run 120 ns
+# KERNEL: stopped at time: 3360 ns
+run 120 ns
+# KERNEL: stopped at time: 3480 ns
+run 120 ns
+# KERNEL: stopped at time: 3600 ns
+run 120 ns
+# KERNEL: stopped at time: 3720 ns
+run 120 ns
+# KERNEL: stopped at time: 3840 ns
+run 120 ns
+# KERNEL: stopped at time: 3960 ns
+run 120 ns
+# KERNEL: stopped at time: 4080 ns
+run 120 ns
+# KERNEL: stopped at time: 4200 ns
+run 120 ns
+# KERNEL: stopped at time: 4320 ns
+run 120 ns
+# KERNEL: stopped at time: 4440 ns
+run 120 ns
+# KERNEL: stopped at time: 4560 ns
+run 120 ns
+# KERNEL: stopped at time: 4680 ns
+run 120 ns
+# KERNEL: stopped at time: 4800 ns
+run 120 ns
+# KERNEL: stopped at time: 4920 ns
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/SelectionSort_STR/CONTROL_PATH/currentState" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/SelectionSort_STR/CONTROL_PATH/nextState" has already been traced.
+# VSIM: 8 object(s) traced.
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort.vhd
+# Compile Entity "SelectionSort"
+# Compile Architecture "structural" of Entity "SelectionSort"
+# Compile Architecture "behavioral" of Entity "SelectionSort"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/RAM_STR/memoryArray" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/RAM_STR/arrayAddress" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/RAM_STR/clk" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/RAM_STR/ce" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/RAM_STR/wr" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/RAM_STR/address" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/RAM_STR/data_in" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/RAM_STR/data_out" has already been traced.
+# VSIM: 0 object(s) traced.
+# KERNEL: Warning: KERNEL_0291 Object "/SelectionSort_tb/SelectionSort_STR/CONTROL_PATH/currentState" has already been traced.
+# VSIM: 0 object(s) traced.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6843 kB (elbread=427 elab2=6127 kernel=288 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\jpsou\OneDrive\Documentos\SelectionSort - Digital System\HDL\Comportamental\descricao_comportamental\src\wave.asdb
+#  16:44, quarta-feira, 18 de junho de 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/jpsou/OneDrive/Documentos/SelectionSort - Digital System/HDL/Comportamental/descricao_comportamental/src/wave.asdb'.
+run 120 ns
+# EXECUTION:: NOTE   : Testbench - 2, 3, 5, 1 4, order = 1, size = 5
+# EXECUTION:: Time: 0 ps,  Iteration: 0,  Instance: /SelectionSort_tb,  Process: line__92.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /SelectionSort_tb/RAM_BEH,  Process: line__59.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /SelectionSort_tb/RAM_STR,  Process: line__59.
+# EXECUTION:: NOTE   : Informando posicao zero na memória para o startAddr
+# EXECUTION:: Time: 100 ns,  Iteration: 0,  Instance: /SelectionSort_tb,  Process: line__92.
+# KERNEL: stopped at time: 120 ns
+run 120 ns
+# EXECUTION:: NOTE   : informa size = 5
+# EXECUTION:: Time: 140 ns,  Iteration: 0,  Instance: /SelectionSort_tb,  Process: line__92.
+# EXECUTION:: NOTE   : informa order = 0
+# EXECUTION:: Time: 180 ns,  Iteration: 0,  Instance: /SelectionSort_tb,  Process: line__92.
+# KERNEL: stopped at time: 240 ns
+run 120 ns
+# KERNEL: stopped at time: 360 ns
+run 120 ns
+# KERNEL: stopped at time: 480 ns
+run 120 ns
+# KERNEL: stopped at time: 600 ns
+run 120 ns
+# KERNEL: stopped at time: 720 ns
+run 120 ns
+# KERNEL: stopped at time: 840 ns
+run 120 ns
+# KERNEL: stopped at time: 960 ns
+run 120 ns
+# KERNEL: stopped at time: 1080 ns
+run 120 ns
+# KERNEL: stopped at time: 1200 ns
+run 120 ns
+# KERNEL: stopped at time: 1320 ns
+run 120 ns
+# KERNEL: stopped at time: 1440 ns
+run 120 ns
+# KERNEL: stopped at time: 1560 ns
+run 120 ns
+# KERNEL: stopped at time: 1680 ns
+run 120 ns
+# KERNEL: stopped at time: 1800 ns
+run 120 ns
+# KERNEL: stopped at time: 1920 ns
+run 120 ns
+# KERNEL: stopped at time: 2040 ns
+run 120 ns
+# KERNEL: stopped at time: 2160 ns
+run 120 ns
+# KERNEL: stopped at time: 2280 ns
+run 120 ns
+# KERNEL: stopped at time: 2400 ns
+run 120 ns
+# KERNEL: stopped at time: 2520 ns
+run 120 ns
+# KERNEL: stopped at time: 2640 ns
+run 120 ns
+# KERNEL: stopped at time: 2760 ns
+run 120 ns
+# KERNEL: stopped at time: 2880 ns
+run 120 ns
+# EXECUTION:: NOTE   : Testbench - 2, 3, 5, 1 4, order = 1, size = 5
+# EXECUTION:: Time: 2980 ns,  Iteration: 0,  Instance: /SelectionSort_tb,  Process: line__92.
+# KERNEL: stopped at time: 3 us
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort_tb.vhd
+# Compile Entity "SelectionSort_tb"
+# Compile Architecture "behavioral" of Entity "SelectionSort_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort_tb.vhd
+# Compile Entity "SelectionSort_tb"
+# Compile Architecture "behavioral" of Entity "SelectionSort_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6843 kB (elbread=427 elab2=6127 kernel=288 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\jpsou\OneDrive\Documentos\SelectionSort - Digital System\HDL\Comportamental\descricao_comportamental\src\wave.asdb
+#  16:47, quarta-feira, 18 de junho de 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/jpsou/OneDrive/Documentos/SelectionSort - Digital System/HDL/Comportamental/descricao_comportamental/src/wave.asdb'.
+run 120 ns
+# EXECUTION:: NOTE   : Testbench - 2, 3, 5, 1 4, order = 1, size = 5
+# EXECUTION:: Time: 0 ps,  Iteration: 0,  Instance: /SelectionSort_tb,  Process: line__92.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /SelectionSort_tb/RAM_BEH,  Process: line__59.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /SelectionSort_tb/RAM_STR,  Process: line__59.
+# EXECUTION:: NOTE   : Informando posicao 1 na memória para o startAddr
+# EXECUTION:: Time: 100 ns,  Iteration: 0,  Instance: /SelectionSort_tb,  Process: line__92.
+# KERNEL: stopped at time: 120 ns
+run 120 ns
+# EXECUTION:: NOTE   : informa size = 5
+# EXECUTION:: Time: 140 ns,  Iteration: 0,  Instance: /SelectionSort_tb,  Process: line__92.
+# EXECUTION:: NOTE   : informa order = 1
+# EXECUTION:: Time: 180 ns,  Iteration: 0,  Instance: /SelectionSort_tb,  Process: line__92.
+# KERNEL: stopped at time: 240 ns
+run 120 ns
+# KERNEL: stopped at time: 360 ns
+run 120 ns
+# KERNEL: stopped at time: 480 ns
+run 120 ns
+# KERNEL: stopped at time: 600 ns
+run 120 ns
+# KERNEL: stopped at time: 720 ns
+run 120 ns
+# KERNEL: stopped at time: 840 ns
+run 120 ns
+# KERNEL: stopped at time: 960 ns
+run 120 ns
+# KERNEL: stopped at time: 1080 ns
+run 120 ns
+# KERNEL: stopped at time: 1200 ns
+run 120 ns
+# KERNEL: stopped at time: 1320 ns
+run 120 ns
+# KERNEL: stopped at time: 1440 ns
+run 120 ns
+# KERNEL: stopped at time: 1560 ns
+run 120 ns
+# KERNEL: stopped at time: 1680 ns
+run 120 ns
+# KERNEL: stopped at time: 1800 ns
+run 120 ns
+# KERNEL: stopped at time: 1920 ns
+run 120 ns
+# KERNEL: stopped at time: 2040 ns
+run 120 ns
+# KERNEL: stopped at time: 2160 ns
+run 120 ns
+# KERNEL: stopped at time: 2280 ns
+run 120 ns
+# KERNEL: stopped at time: 2400 ns
+run 120 ns
+# KERNEL: stopped at time: 2520 ns
+run 120 ns
+# KERNEL: stopped at time: 2640 ns
+run 120 ns
+# KERNEL: stopped at time: 2760 ns
+run 120 ns
+# KERNEL: stopped at time: 2880 ns
+run 120 ns
+# EXECUTION:: NOTE   : Testbench - 2, 3, 5, 1 4, order = 1, size = 5
+# EXECUTION:: Time: 2940 ns,  Iteration: 0,  Instance: /SelectionSort_tb,  Process: line__92.
+# KERNEL: stopped at time: 3 us
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort_tb.vhd
+# Compile Entity "SelectionSort_tb"
+# Compile Architecture "behavioral" of Entity "SelectionSort_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort_tb.vhd
+# Compile Entity "SelectionSort_tb"
+# Compile Architecture "behavioral" of Entity "SelectionSort_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort_tb.vhd
+# Compile Entity "SelectionSort_tb"
+# Compile Architecture "behavioral" of Entity "SelectionSort_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort_tb.vhd
+# Compile Entity "SelectionSort_tb"
+# Compile Architecture "behavioral" of Entity "SelectionSort_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/SelectionSort_pkg.vhd
+# Compile Package "SelectionSort_pkg"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/ControlPath.vhd
+# Compile Entity "ControlPath"
+# Compile Architecture "behavioral" of Entity "ControlPath"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/ControlPath_tb.vhd
+# Compile Entity "ControlPath_tb"
+# Compile Architecture "behavioral" of Entity "ControlPath_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/DataPath.vhd
+# Compile Entity "DataPath"
+# Compile Architecture "behavioral" of Entity "DataPath"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/RegisterNbits.vhd
+# Compile Entity "RegisterNbits"
+# Compile Architecture "behavioral" of Entity "RegisterNbits"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work descricao_comportamental -2002  $dsn/src/memory.vhd
+# Compile Entity "Memory"
+# Compile Architectur
