@@ -1,4 +1,0 @@
-8 reg
-8 mux
-1 adder
-2 comparadores

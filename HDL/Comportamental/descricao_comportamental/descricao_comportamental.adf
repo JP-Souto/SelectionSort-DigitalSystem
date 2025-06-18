@@ -27,6 +27,7 @@ fileopenfolder=C:\Users\jpsou\OneDrive\Documentos\SelectionSort - Digital System
 /util_pkg.vhd=-1
 /SelectionSort.vhd=-1
 /SelectionSort_tb.vhd=-1
+/ControlPath.vhd=-1
 [Files.Data]
 .\src\SelectionSort_pkg.vhd=VHDL Source Code
 .\src\ControlPath.vhd=VHDL Source Code
@@ -37,7 +38,8 @@ fileopenfolder=C:\Users\jpsou\OneDrive\Documentos\SelectionSort - Digital System
 .\src\util_pkg.vhd=VHDL Source Code
 .\src\SelectionSort.vhd=VHDL Source Code
 .\src\SelectionSort_tb.vhd=VHDL Source Code
+.\src\ControlPath.vhd=VHDL Source Code
 [HierarchyViewer]
-HierarchyInformation=
+HierarchyInformation=selectionsort_tb|behavioral|0
 ShowHide=ShowTopLevel
 Selected=

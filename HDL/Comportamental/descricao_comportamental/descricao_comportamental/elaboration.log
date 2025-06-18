@@ -1,4 +1,4 @@
-Active-HDL 15.0.261.9132 2025-06-17 15:44:24
+Active-HDL 15.0.261.9132 2025-06-18 16:47:19
 
 Elaboration top modules:
 Architecture                  behavioral(SelectionSort_tb)
@@ -8,8 +8,9 @@ Architecture                  behavioral(SelectionSort_tb)
 Entity           | Architecture | Library                  | Info | Compiler Version          | Compilation Options
 --------------------------------------------------------------------------------------------------------------------
 SelectionSort_tb | behavioral   | descricao_comportamental |      | 15.0.261.9132 (Windows64) | -dbg
-SelectionSort    | structural   | descricao_comportamental |      | 15.0.261.9132 (Windows64) | -dbg
+SelectionSort    | behavioral   | descricao_comportamental |      | 15.0.261.9132 (Windows64) | -dbg
 Memory           | BlockRAM     | descricao_comportamental |      | 15.0.261.9132 (Windows64) | -dbg
+SelectionSort    | structural   | descricao_comportamental |      | 15.0.261.9132 (Windows64) | -dbg
 ControlPath      | behavioral   | descricao_comportamental |      | 15.0.261.9132 (Windows64) | -dbg
 DataPath         | behavioral   | descricao_comportamental |      | 15.0.261.9132 (Windows64) | -dbg
 RegisterNbits    | behavioral   | descricao_comportamental |      | 15.0.261.9132 (Windows64) | -dbg
@@ -33,9 +34,3 @@ descricao_comportamental        | None
 ieee                            | Standard IEEE packages library
 std                             | Standard VHDL library
 --------------------------------------------------------------------------------------------------------------------
-
-
-Simulation Options: asim -O5 +access +r +m+selectionsort_tb selectionsort_tb behavioral
-
-
-The performance of simulation is reduced. Version Student Edition
